@@ -1,21 +1,112 @@
-button {
+/* Reset một số phần tử mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Thân trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
-    font-size: 16px;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Tiêu đề trong header */
+header h1 {
+    font-size: 2em;
+}
+
+/* Main content */
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Nút nhấn */
+button {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #45a049;
-    transform: scale(1.1); 
 }
 
+/* Section Hướng dẫn làm việc nhóm */
+#instructions {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-button:active {
-    background-color: #388e3c;
-    transform: scale(1);
+#instructions h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+#instructions h3 {
+    font-size: 1.4em;
+    margin-top: 20px;
+    color: #333;
+}
+
+#instructions ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+#instructions li {
+    margin-bottom: 8px;
+}
+
+#instructions code {
+    background-color: #f4f4f4;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #instructions {
+        padding: 15px;
+    }
 }
